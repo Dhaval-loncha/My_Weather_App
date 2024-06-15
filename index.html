@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mquery.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <h1>My Weather App</h1>
+        <header>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Enter City">
+                <img src="images/search-globe-svgrepo-com.svg" id="search-img" alt="">
+            </div>
+        </header>
+        <main id="main">
+            <div id="location">
+                <div class="dt">
+                    <p id="date"></p>
+                    <p id="time"></p>
+                </div>
+                <div class="city" aria-required="false">
+                    <h1 id="city"></h1>
+                    <div class="sr-ss">
+                        <div>
+                            <p>Sunrise</p>
+                            <p id="sunrise">-/-</p>
+                        </div>
+                        <div>
+                            <p>Sunset</p>
+                            <p id="sunset">-/-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weather">
+                <div class="weather-icon">
+                    <div class="icon">
+                        <img src="images/clear.png" alt="weather icon" id="weather-icon">
+                    </div>
+                    <div class="temp">
+                        <h1 id="temp">32°C</h1>
+                        <p id="feels">Feels like <span>28°C</span></p>
+                    </div>
+                </div>
+                <div class="weather-details">
+                    <div class="wd">
+                        <p>Humidity</p>
+                        <p id="humidity">-/-</p>
+                    </div>
+                    <div class="wd">
+                        <p>Pressure</p>
+                        <p id="pressure">-/-</p>
+                    </div>
+                    <div class="wd">
+                        <p>Wind</p>
+                        <p id="wind">-/-</p>
+                    </div>
+                    <div class="wd">
+                        <p>Visibility</p>
+                        <p id="visibility">-/-</p>
+                    </div>
+                    <div class="wd">
+                        <p>Min Temp</p>
+                        <p id="mintemp">-/-</p>
+                    </div>
+                    <div class="wd">
+                        <p>Max Temp</p>
+                        <p id="maxtemp">-/-</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
